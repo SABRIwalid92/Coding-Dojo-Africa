@@ -1,0 +1,229 @@
+* {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+
+.nav {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav h1 {
+    color: white;
+    font-weight: normal;
+    margin: 5px auto;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav li {
+    margin-left: 50px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #17A2B8;
+    color: white;
+    box-shadow: 3px 3px 3px black;
+    border: black 3px solid;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+main>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+/* ************************************************** */
+.Bloc_left {
+    width: 26%;
+    font-size: 130%;
+    margin-top: 3%;
+}
+
+/* top_left_card */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border: solid #8080808c 3px;
+}
+
+.top {
+    background-color: #17A2B8;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    flex: 1;
+}
+
+.top img {
+    height: 80px;
+    position: relative;
+    bottom: -60px;
+    left: 40px;
+    border: solid 4px black;
+    outline: solid 4px white;
+    border-radius: 50%;
+}
+
+.bottom {
+    margin: 20px 20px;
+    flex: 3;
+}
+
+.bottom h1 {
+    margin-top: 30px;
+}
+
+#div_with_a,
+#p_of_seattle {
+    margin: 10px 0;
+}
+
+.bottom img {
+    width: 15px;
+}
+
+/* *************************************** */
+/* ******************************************* */
+/* *********************************************** */
+
+.education {
+    border: solid #8080808c 3px;
+    width: fit-content;
+    font-size: 106%;
+}
+
+* {
+    text-align: start;
+}
+
+.education table {
+    width: 100%;
+}
+
+.education th {
+    background-color: #333333;
+}
+
+th>*,
+td>* {
+    margin: 5px 20px;
+
+}
+
+.education h4 {
+    color: white;
+    font-weight: 10;
+}
+
+.education span {
+    color: #808080;
+}
+
+.Bloc_right {
+    font-size: 130%;
+    width: fit-content;
+}
+
+.Bloc_right>* {
+    border: solid #8080808c 3px;
+}
+
+.Bloc_right * {
+    text-align: start;
+}
+
+.Bloc_right span {
+    color: grey;
+    background-color: #fefefe8c;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.Bloc_right h3 {
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Bloc_right th {
+    background-color: #333333;
+}
+
+.Bloc_right h4 {
+    color: white;
+    margin: 5px;
+    font-weight: 10;
+}
+
+.Connection_Requests img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.Bloc_right td:first-child h3 img {
+    border: black 3px solid;
+}
+
+.Connection_Requests td {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Connection_Requests div {
+    display: flex;
+    gap: 10px;
+}
+
+.Your_Connections table {
+    width: 100%;
+}
+
+.Your_Connections td>* {
+    margin: 10px 20px;
+}
+
+.Your_Connections img {
+    height: 30px;
+    border-radius: 50%;
+}
+
+#td_with_a {
+    width: 100%;
+    border-top: #333333 solid 3px;
+    height: 50px;
+}
