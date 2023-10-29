@@ -1,0 +1,47 @@
+* {
+    background-color: #DDDDFD;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,
+footer {
+    color: #384855;
+}
+
+img {
+    width: 10em;
+
+}
+
+div {
+    width: 40em;
+    padding: 15px;
+
+}
+
+.upper {
+    background-color: #90C5FF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle {
+    display: flex;
+    justify-content: space-around;
+    background-color: #D79AE7;
+}
+
+.lower {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: #91C5D6;
+}

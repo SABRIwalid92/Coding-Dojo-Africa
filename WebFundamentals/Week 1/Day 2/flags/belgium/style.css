@@ -1,0 +1,26 @@
+.left{
+background-color: black;
+height: 200px;
+width: 100px;
+
+}
+.right{
+    background-color: #ED1C24;
+    height: 200px;
+    width: 100px;
+    margin-left: -10px;
+   
+
+}
+.center{
+    background-color: #FFF200;
+    height: 200px;
+    width: 100px;
+    margin-left: -10px;
+ 
+}
+
+div{
+    display: inline-block;
+    
+}

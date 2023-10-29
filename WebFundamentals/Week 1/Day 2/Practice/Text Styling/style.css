@@ -1,0 +1,30 @@
+*{
+    font-family: cursive;
+    margin: 5px;
+    zoom: 110%;
+
+}
+h1{
+    background-color: black;
+    color: aqua;
+    margin-top: 15px;
+    font-size:xx-large;
+
+}
+h1 span{
+    color: white
+}
+h2{
+    color: white;
+    background-color: purple;
+    text-align: center;
+    font-style: italic;
+
+}
+h3{
+    text-decoration: underline;
+    color: black;
+    text-align: end;
+    background-color:#9FC5F8;
+
+}

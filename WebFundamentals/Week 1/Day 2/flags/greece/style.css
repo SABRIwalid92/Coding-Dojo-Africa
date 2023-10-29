@@ -1,0 +1,13 @@
+.main{
+    background-color: #93D0E0;
+    margin: 400px;
+    border: 3px dotted black;
+
+}
+p{
+    height: 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    background-color: white;
+    
+}
