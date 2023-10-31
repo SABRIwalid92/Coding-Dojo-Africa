@@ -1,0 +1,84 @@
+* {
+    font-family: sans-serif;
+}
+body{
+    width: 60%;
+    margin: 0 auto;
+
+
+}
+header {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>* {
+    margin: 10px;
+    height: 25px;
+}
+
+header>button {
+    background-color: rgb(71, 71, 211);
+    color: white;
+    box-shadow: 3px 3px 3px black;
+
+}
+
+header [type] {
+    width: 40%;
+    padding: 0 auto;
+
+}
+
+main{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    font-size: 120%;
+}
+main>*:last-child{
+    height: fit-content;
+    padding: 10px   ;
+}
+main>*:last-child,
+.ninja {
+    border: solid 3px black;
+}
+main>*:first-child {
+}
+
+
+.ninja {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.ninja button {
+    background-color: yellow;
+    color: black;
+    box-shadow: 3px 3px 3px black;
+}
+
+.ninja_left{
+    min-width: 40%;
+    text-align: center;
+}
+.ninja_left > *{
+    margin: 10px 30px 10px 0;
+
+}
+.ninja_left h4 {
+    font-style: italic;
+}
+.ninja_left button{
+    padding: 5px 10px;
+}
+
+ button {
+    background-color: #93C47D;
+    color: black;
+    box-shadow: 3px 3px 3px black;
+}
