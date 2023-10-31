@@ -37,4 +37,13 @@ var lifesAnswers = [
     "My sources say no.",
     "Outlook not so good.",
     "Very doubtful."
-        ];
+];
+
+function Oracle() {
+    var roll = Math.random();
+    roll *= lifesAnswers.length;
+    roll = Math.floor(roll);
+    console.log(`the Oracle says "${(lifesAnswers[roll])}"`);
+}
+
+Oracle();
