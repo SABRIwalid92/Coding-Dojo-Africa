@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>DojoWeather</h1>
+      <ul>
+        <li onclick="report()">
+          <h3>Burbank</h3>
+        </li>
+        <li onclick="report()">
+          <h3>Chicago</h3>
+        </li>
+        <li onclick="report()">
+          <h3>Dallas</h3>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div class="upper">
+        <h2>San Jose</h2>
+        <div class="right">
+          <p>show tempertaure in</p>
+          <select onchange="change(this)">
+            <option value="°C">°C</option>
+            <option value="°F">°F</option>
+          </select>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="card">
+          <h3>Today</h3>
+          <img src="assets/some_rain.png" alt="rain_pic" />
+          <p>some rain</p>
+          <div class="temps">
+            <h3><span>24</span>°</h3>
+            <h3><span>18</span>°</h3>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Tomorrow</h3>
+          <img src="assets/some_sun.png" alt="sun_pic" />
+          <p>some sun</p>
+          <div class="temps">
+            <h3><span>27</span>°</h3>
+            <h3><span>19</span>°</h3>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Friday</h3>
+          <img src="assets/some_clouds.png" alt="clouds_pic" />
+          <p>some clouds</p>
+          <div class="temps">
+            <h3><span>21</span>°</h3>
+            <h3><span>16</span>°</h3>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Saturday</h3>
+          <img src="assets/some_sun.png" alt="sun_pic" />
+          <p>some sun</p>
+          <div class="temps">
+            <h3><span>26</span>°</h3>
+            <h3><span>21</span>°</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img src="assets/cookie.png" alt="cookie_pic" />
+      <div>
+        <h4>Stop! Cookie time</h4>
+        <p>
+          We us cookies (sadly not the edible ones) to personalize content and
+          ads, to provide social media features and to analyse our traffic.
+          <a href="#">Read more...</a>
+        </p>
+      </div>
+      <button onclick="hide(this)">I Accept</button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

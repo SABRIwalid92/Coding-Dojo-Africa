@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive, sans-serif;
+}
+header {
+  background-color: #9fc5f8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+header h1 {
+  color: white;
+}
+header h3 {
+  color: white;
+  font-weight: lighter;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+header li{
+  cursor: pointer;
+}
+
+main,
+footer {
+  width: 60%;
+  margin: 0 auto;
+}
+main .upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 2px solid black;
+}
+.upper h2 {
+  font-weight: lighter;
+}
+.right select {
+  margin-left: 10px;
+  border: black 2px solid;
+}
+.right p {
+  display: inline-block;
+}
+.bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.card img {
+  border-radius: 50%;
+  width: 130px;
+  padding: 20px;
+}
+.temps {
+  display: flex;
+  gap: 30px;
+}
+.temps h3:first-child {
+  color: #cf2a27;
+}
+.temps h3:last-child {
+  color: #2b78e4;
+}
+footer {
+  border: 3px black solid;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 30px; */
+  position: fixed;
+  bottom: 80px;
+  left: 250px;
+  background-color: white;
+}
+footer button {
+  margin-right: 20px;
+  width: 100px;
+  background-color: #9fc5f8;
+  box-shadow: 3px 3px black;
+  cursor: pointer;
+}
+footer img {
+  height: 60px;
+  margin-left: 20px;
+}
+footer div{
+    width: 60%;
+}
