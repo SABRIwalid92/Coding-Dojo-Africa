@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>counter</title>
+  </head>
+  <style></style>
+  <body>
+    <h1>Counter</h1>
+    <p id="counter">{{session["counter"]}}</p>
+
+    <form action="/"><button>Click</button></form>
+    <form action="/destroy_session"><button>Reset</button></form>
+    <form action="/plus2"><button>+2</button></form>
+    <form action="/" method="post">
+      <input type="text" name="increment_val" />
+    </form>
+  </body>
+</html>

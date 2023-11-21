@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the Great Number Game</title>
+  </head>
+  <style>
+    .color{
+        width: 200px;
+        height: 200px;
+        border: 2px black solid;
+        background-color: {{color}};
+    }
+    .show{
+      display: {{session["show"]}};
+    }
+  </style>
+  <body>
+    <h1>welcome to the Great Number Game!</h1>
+    <p>I am thinking of a number between 1 and 100</p>
+    <p>Take a guess!</p>
+    <div class="color">
+      <h1>{{feedback}}</h1>
+      <form action="/play_again" class="show">
+        <input type="submit" value="Play Again" />
+      </form>
+    </div>
+    <form action="/guess" method="post">
+      <input type="text" name="x_guess" />
+      <input type="submit" value="guess" />
+    </form>
+    <div>
+      <h2>{{session["attemps"]}} attemps</h2>
+    </div>
+  </body>
+</html>
