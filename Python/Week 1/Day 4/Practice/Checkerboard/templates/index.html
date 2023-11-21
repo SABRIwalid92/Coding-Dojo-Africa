@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <title>checkerboard</title>
+  </head>
+  <style>
+    .color1{
+        background-color: {{color1}};
+    }
+    .color2{
+        background-color: {{color2}};
+    }
+  </style>
+  <body>
+    <div class="board">
+      {% for i in range(x//2) %}
+      <div class="row">
+        {% for i in range((y//2) if y else 4) %} {% if color1 %}
+        <div class="color1 square"></div>
+        {% else %}
+        <div class="black square"></div>
+        {% endif %} {% if color2 %}
+        <div class="color2 square"></div>
+        {% else %}
+        <div class="white square"></div>
+        {% endif %} {% endfor %}
+      </div>
+      <div class="row">
+        {% for i in range((y//2) if y else 4) %} {% if color2 %}
+        <div class="color2 square"></div>
+        {% else %}
+        <div class="white square"></div>
+        {% endif %} {% if color1 %}
+        <div class="color1 square"></div>
+        {% else %}
+        <div class="black square"></div>
+        {% endif %} {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
