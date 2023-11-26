@@ -1,0 +1,9 @@
+SELECT * FROM users_erd_schema.users;
+insert into users (first_name, last_name, email) 
+values ("sam" , "emanuel", "s@e.com"), ("mas" , "lionel", "s@err.com"), ("fred" , "hobbit", "s@valley.com");
+select * from users where email = "s@e.com";
+select * from users where id = 3;
+update users set last_name = "Pancakes" where id = 3 ;
+delete from users where id = 2;
+SELECT * FROM users order by first_name ;
+SELECT * FROM users order by first_name desc ;

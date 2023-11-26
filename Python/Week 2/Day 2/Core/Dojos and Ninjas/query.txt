@@ -1,0 +1,13 @@
+SELECT * FROM dojos_and_ninjas_schema.ninjas;
+insert into ninjas (first_name, last_name, age, dojo_id) 
+values ("sasuke", "utchiha", 17, 4), ("naruto", "uzumaki", 17, 4), ("jiraya", "uzumaki", 78, 4);
+insert into ninjas (first_name, last_name, age, dojo_id) 
+values ("orochimaru", "snake", 999, 5), ("tsunade", "hokage", 998, 5), ("konohamaru", "ofkonoha", 7, 5);
+insert into ninjas (first_name, last_name, age, dojo_id) 
+values ("sarutobi", "ofkonoha", 89, 6), ("first", "hokage", 41, 6), ("second", "hokage", 43, 6);
+select * from ninjas where dojo_id = (select id from dojos limit 1);
+select * from ninjas where dojo_id = (select id from dojos order by id desc limit 1 );
+select * from dojos order by id desc limit 1;
+select * from ninjas join dojos on ninjas.dojo_id = dojos.id
+where ninjas.id = 6 ;
+select * from ninjas join dojos on ninjas.dojo_id = dojos.id ;
