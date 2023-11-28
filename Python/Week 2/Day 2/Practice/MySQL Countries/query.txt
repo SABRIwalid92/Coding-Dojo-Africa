@@ -1,0 +1,31 @@
+==================================== CITY==================================
+SELECT * FROM world.city;
+select CountryCode, count(city.name) from city
+join country on code = CountryCode
+group by CountryCode
+order by count(city.name) desc;
+select CountryCode, name, Population from city 
+where CountryCode = "MEX" and Population > 500000
+order by Population desc;
+SELECT country.name, city.name, district, city.Population  FROM city 
+JOIN country ON country.code = city.countrycode
+WHERE CountryCode = 'ARG'AND District = 'buenos aires' AND city.Population > 500000;==================================== COUNTRY==================================
+SELECT * FROM world.country;
+select * from country 
+where SurfaceArea < 501 and Population > 100000;
+select * from country 
+where GovernmentForm = 'Constitutional Monarchy' and Capital > 200 and LifeExpectancy > 75;
+select region, count(country.Name) from country
+group by region
+order by count(country.name) desc;
+================================= COUNTRYLANGUAGE ==================================
+
+SELECT * FROM world.countrylanguage;
+select country.name, Language, percentage  from countrylanguage 
+join country on code= CountryCode
+where language='slovene'
+order by Percentage desc;
+select country.name, Language, percentage  from countrylanguage 
+join country on code= CountryCode
+where Percentage > 89
+order by Percentage desc;
