@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success Page</title>
+  </head>
+  <body>
+    {% with messages = get_flashed_messages(category_filter=["OK"]) %}     {% if
+    messages %}     {% for message in messages %}     
+    <p style="color: green">{{message}}</p>
+            {% endfor %} {% endif %} {% endwith %}
+
+    <u>
+      <h3>Email Addresses Entered</h3>
+    </u>
+    <table class="table table-borderless">
+      {% for email in emails %}
+      <tr>
+        <td></td>
+        <td>{{email.email}}</td>
+        <td>{{email.created_at}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
