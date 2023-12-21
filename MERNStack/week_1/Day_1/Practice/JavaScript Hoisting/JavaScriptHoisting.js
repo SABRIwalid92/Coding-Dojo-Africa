@@ -1,70 +1,72 @@
-// var hello = 'world';
-// console.log(hello);
+var hello;
+hello = "world";
+console.log(hello); //hello
 
-// var needle = 'haystack';
-// test();
-// function test(){
-//     var needle = 'magnet';
-//     console.log(needle);
-// }                           //magnet
+var needle;
+needle = "haystack";
+function test() {
+  var needle = "magnet";
+  console.log(needle);
+}
+test(); //magnet
 
-// var brendan = 'super cool';
-// function print(){
-//     brendan = 'only okay';
-//     console.log(brendan);
-// }
-// console.log(brendan);   //super cool
+var brendan;
+brendan = "super cool";
+function print() {
+  brendan = "only okay";
+  console.log(brendan); //only okay
+}
+console.log(brendan); //super cool
 
-// var food = 'chicken';
-// console.log(food);
-// eat();
-// function eat(){
-//     food = 'half-chicken';
-//     console.log(food);
-//     var food = 'gone';
-// }                       //chicken
-//                         //half-chicken
+var food;
+food = "chicken";
+console.log(food); //chicken
 
-// mean();
-// console.log(food);
-// var mean = function () {
-//     food = "chicken";
-//     console.log(food);
-//     var food = "fish";
-//     console.log(food);
-// }
-// console.log(food);  //mean is not a function
+function eat() {
+  var food;
+  food = "half-chicken";
+  console.log(food);
+  food = "gone";
+}
+eat(); //half-chicken
 
-// console.log(genre);
-// var genre = "disco";
-// rewind();
-// function rewind() {
-//   genre = "rock";
-//   console.log(genre);
-//   var genre = "r&b";
-//   console.log(genre);
-// }
-// console.log(genre); /*undefined
-//                     rock
-//                     r&b
-//                     disco*/
+var mean;
+mean(); //mean is not a function
+console.log(food);
+mean = function () {
+  food = "chicken";
+  console.log(food);
+  var food = "fish";
+  console.log(food);
+};
+console.log(food);
 
-// dojo = "san jose";
-// console.log(dojo);
-// learn();
-// function learn() {
-//   dojo = "seattle";
-//   console.log(dojo);
-//   var dojo = "burbank";
-//   console.log(dojo);
-// }
-// console.log(dojo); /*san jose
-//                     seattle
-//                     burbank
-//                     san jose*/
+console.log(genre); //undefined
+var genre;
+genre = "disco";
+function rewind() {
+  var genre;
+  genre = "rock";
+  console.log(genre);
+  genre = "r&b";
+  console.log(genre);
+}
+rewind(); //rock  //r&b
+console.log(genre); //disco
 
-console.log(makeDojo("Chicago", 65));
-console.log(makeDojo("Berkeley", 0));
+dojo = "san jose";
+console.log(dojo); //san jose
+function learn() {
+  var dojo;
+  dojo = "seattle";
+  console.log(dojo);
+  dojo = "burbank";
+  console.log(dojo);
+}
+learn(); //seattle   //burbank
+
+console.log(dojo); //san jose
+
 function makeDojo(name, students) {
   const dojo = {};
   dojo.name = name;
@@ -75,4 +77,7 @@ function makeDojo(name, students) {
     dojo = "closed for now";
   }
   return dojo;
-} //TypeError: Assignment to constant variable.
+}
+console.log(makeDojo("Chicago", 65));
+console.log(makeDojo("Berkeley", 0));
+//TypeError: Assignment to constant variable.
