@@ -11,10 +11,15 @@ function App() {
     "Interestingly the Xiaomi 14 series has already been launched in China. So technically, they're here now, but will take a bit of time to reach other markets. Historically, the Xiaomi models have made their way to the markets outside of China within a couple of months. With the Xiaomi 13 series we saw the Xiaomi 13 and Xiaomi 13 Pro launch in Western markets in the early part of the year. The range was expanded further with the Xiaomi 13 Ultra a little later in the year and the 13T and 13T Pro in the fall of 2023.",
     "It's claimed the OnePlus 12 will have a display capable of reaching 2600nits peak brightness, and have a new BOE X1 OLED panel. That should mean excellent colour accuracy and - with a resolution of 3168 x 1440 - it'll be really crisp and detailed too.",
   ]);
-  const [color, setColor] = useState("black");
-  const [bgColor, setBgColor] = useState("white");
+  const [tabsStyles, setTabsStyles] = useState([
+    { color: "black", bgColor: "white" },
+    { color: "black", bgColor: "white" },
+    { color: "black", bgColor: "white" },
+    { color: "black", bgColor: "white" },
+  ]);
+
   return (
-    <div className="App">
+    <>
       {contents
         .filter((e, i) => {
           return i > 0;
@@ -29,13 +34,13 @@ function App() {
               i={idx + 1}
               setContents={setContents}
               contents={contents}
-              color={color}
-              bgColor={bgColor}
+              setTabsStyles={setTabsStyles}
+              tabsStyles={tabsStyles}
             />
           );
         })}
       <Display contents={contents} />
-    </div>
+    </>
   );
 }
 

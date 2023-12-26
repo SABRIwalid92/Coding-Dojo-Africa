@@ -8,7 +8,6 @@ const Display = ({ contents }) => {
   };
 
   const id = contents[0];
-  console.log(contents);
   return (
     <div style={style}>
       <p>{contents[id]}</p>

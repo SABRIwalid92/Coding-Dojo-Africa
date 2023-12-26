@@ -1,15 +1,9 @@
-import { hover } from "@testing-library/user-event/dist/hover";
-import React, { useState } from "react";
+import React from "react";
 
-const Tab = ({ i, setContents, contents, color, bgColor }) => {
-  //   const stylesFn = () => {
-  //     setColor("white");
-  //     setBgColor("black");
-  //   };
-
+const Tab = ({ i, setContents, contents, setTabsStyles, tabsStyles }) => {
   const style = {
-    background: bgColor,
-    color: color,
+    color: tabsStyles[i - 1].color,
+    background: tabsStyles[i - 1].bgColor,
     display: "inline-block",
     fontSize: "20px",
     border: "1px solid black",
@@ -29,6 +23,11 @@ const Tab = ({ i, setContents, contents, color, bgColor }) => {
         } else return el;
       })
     );
+
+    const temp = [...tabsStyles];
+    temp[i - 1] = { color: "white", bgColor: "black" };
+    setTabsStyles(temp);
+    console.log(tabsStyles);
   };
   return (
     <div
