@@ -1,0 +1,37 @@
+{
+   "validator": {
+      $jsonSchema: {
+         "bsonType": "object",
+         title: "Student Object Validation",
+         required: [ "name","birthday","home_state", "lucky_number"  ],
+         properties: {
+            name: {
+               "bsonType": "string"
+            },
+	    home_state: {
+               "bsonType": "string"
+            },
+            lucky_number: {
+               "bsonType": "int"
+            },
+            birthday:{
+                "bsonType": "object",
+                required: [ "month", "day", "year" ],
+                properties:{
+                    month :{
+                        "bsonType" : "int"
+                    },
+                    day :{
+                        "bsonType" : "int"
+                    },
+                    year :{
+                        "bsonType" : "int"
+                    }
+                }
+
+            }
+         }
+      }
+   }
+} 
+
