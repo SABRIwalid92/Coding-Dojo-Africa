@@ -1,0 +1,36 @@
+Code Snippet 1
+variable 		value
+
+Code Snippet 2
+variable 		value
+result			15
+Code Snippet 3
+variable 		value
+result			18	
+Code Snippet 4
+variable 		value
+num			15
+result			10
+Code Snippet 5
+variable 		value
+num			15
+result			20
+
+Code Snippet 6
+variable 		value
+result			16
+
+Code Snippet 7
+variable 		value
+
+Code Snippet 8
+variable 		value
+
+Code Snippet 9
+variable 		value
+result			13
+
+Code Snippet 10
+variable 		value
+result			18
+
